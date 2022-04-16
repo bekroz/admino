@@ -11,7 +11,25 @@ class DashboardScreen extends StatelessWidget {
           padding: EdgeInsets.all(defaultPadding),
           child: Column(
             children: [
-              Header()
+              Header(),
+              Row(
+                children: [
+                  Expanded(
+                    flex: 5,
+                    child: Container(
+                      height: 500,
+                      color: Colors.white,
+                      ),
+                  ),
+                  Expanded(
+                    flex: 2, 
+                    child: Container(
+                    height: 500,
+                    color: primaryColor,
+                    ),
+                  ),
+                ],
+              )
             ],
           )),
     );
